@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvmensaje"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Sistema de calificaciones" />
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Codigo de la nota" />
+
+    <TextView
+        android:id="@+id/tvmensaje1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Nota primer momento" />
+
+    <EditText
+        android:id="@+id/etnota1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Ingresar nota" />
+
+    <TextView
+        android:id="@+id/tvmensaje2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Nota segundo momento" />
+
+    <EditText
+        android:id="@+id/etnota2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Ingresar nota" />
+
+    <TextView
+        android:id="@+id/tvmensaje3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Nota tercer momento" />
+
+    <EditText
+        android:id="@+id/etnota3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Ingresar nota" />
+
+    <TextView
+        android:id="@+id/tvnotafinal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="200dp"
+            android:onClick="Guardar"
+            android:textSize="22dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#0CEA15"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="200dp"
+            android:onClick="Consultar"
+            android:textSize="22dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6D7FE3"
+            android:text="Consultar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btmodificar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="Modificar"
+            android:textSize="22dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#F49507"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/bteliminar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="Eliminar"
+            android:textSize="22dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#BD1919"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btlimpiar"
+        android:layout_width="200dp"
+        android:onClick="Limpiar"
+        android:textSize="22dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#868A8E"
+        android:text="Limpiar" />
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#106038"
+            android:onClick="Calcular"
+            android:text="Calcular"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>
